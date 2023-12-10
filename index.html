@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Portfolio</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- custom css  -->
+  <link rel="stylesheet" href="style.css">
+  <!-- font awsome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .navbar{
+      background-color: rgba(0, 0, 0, 0.452);
+      backdrop-filter: blur(3px);
+    }
+    .custom-alert {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 9999;
+        display: none;
+    }
+    .dyn-border{
+      border: 2px solid white;
+    }
+    .dyn-border:hover{
+      border: 2px solid rgb(0, 139, 30);
+    }
+    
+</style>
+</head>
+<body class="bg-dark">
+
+<nav class="navbar navbar-expand-lg  fixed-top ">
+  <div class="container ">
+    <a class="navbar-brand text-white" href="#">M_Johnzy</a>
+    <span class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+    </span>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link d-block d-lg-none text-white" href="#portfolio" onclick="showNormalPage()">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-block d-lg-none text-white " href="#about" onclick="aboutBtn()">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+    <div class="container-fluid text-white mt-5">
+        <div class="row ">
+            <div class="col-lg-3 bg-dark d-flex justify-content-center  pt-5 ">
+                <div class="content text-center">
+                    <img src="./asset/profile-image.jpg" alt="" class="img-fluid">
+                    <h3 class="m-4">Melvin</h3>
+                    <p>Berlin , Germany</p>
+                    <div class="icons d-flex gap-4 justify-content-center fs-5">
+                        <a href="https://www.instagram.com/____.melani.___/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram" style="color: #f2f2f2;"></i></a>
+                        <a href="https://wa.me/+49 176 30498225"><i class="fa-brands fa-whatsapp" style="color: #f2f2f2"></i></a>
+                    </div>
+                      <button class="btn text-white my-3 dyn-border" data-bs-toggle="modal" data-bs-target="#exampleModal" >Message</button>
+  
+                    
+
+                    <div class="modal fade mt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+                      <div class="modal-dialog ">
+                        <div class="modal-content modal-message">
+                          <div class="text-end ">
+                              
+                              <button type="button" class="btn " data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></button>
+                              <h4 class="text-center text-light ">Message Me</h4>
+                          </div>
+                          <div class="modal-body ">
+                              <div class="col bg-secondary-subtle rounded-3 shadow modal-message">
+                                <form id="submit-form" action="" class="bg-dark">
+                                  <input type="text" id="fname" name="name" placeholder="Your name" class="form-control my-2">
+                                  <input type="text" id="lname" name="email" placeholder="Your email" class="form-control my-2">
+                                 
+                                  <textarea id="subject" name="message" placeholder="Write here.." style="height:150px" class="form-control my-2 "></textarea>
+                                  <button type="submit"  class="btn text-white w-100" onclick="sendmsg()" style="background-color: rgb(0, 139, 30);">Send</button>
+                                </form>
+
+                                   
+                              </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                    <div class="pages d-none d-sm-block ">
+                      <div class="page" onclick="showNormalPage()">
+                        <p class="mt-1" >Portfolio</p>
+                        <div class="menu-line"></div>
+                      </div>
+                      <div class="page" onclick="aboutBtn()">
+                        <p class="mt-2" >About</p>
+                        <div class="menu-line"></div>
+                      </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9 bg-dark pt-4 " id="about">
+
+
+
+              <div class="row "  id="image-gallery" ></div>
+              </div>
+             
+            </section>
+
+
+        
+     
+         
+           
+
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+<script src="script.js"></script>
+<!-- Add this script tag to include the medium-zoom library -->
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
+
+
+</body>
+</html>
