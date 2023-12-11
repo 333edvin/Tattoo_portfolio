@@ -1,20 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
     const galleryContainer = document.getElementById("image-gallery");
 
-    const imagePaths = [
+    const imagePaths = [ 
         "./images/20220217_233811-01.jpeg.jpg",
-        "./images/IMG_20221007_182651.jpg",
         "./images/IMG_20221125_235257.jpg",
         "./images/IMG_20221126_214030.jpg",
         "./images/IMG_20221129_190251.jpg",
-        "./images/IMG_20221129_190808.jpg",
         "./images/IMG_20221130_194815.jpg",
-        "./images/IMG_20221130_194825.jpg",
         "./images/IMG_20221201_150535.jpg",
-        "./images/IMG_20221202_000045.jpg",
         "./images/IMG_20221202_000106.jpg",
         "./images/IMG_20221202_221728.jpg",
-        "./images/IMG_20221202_221802.jpg",
         "./images/IMG_20221203_151321.jpg",
         "./images/IMG_20221203_151327.jpg",
         "./images/IMG_20221203_151331.jpg",
@@ -41,7 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
         "./images/IMG_20221225_061805-01.jpeg.jpg",
         "./images/IMG_20221225_061805.jpg",
         "./images/IMG_20221225_172506.jpg",
-        "./images/IMG_20221225_172908.jpg",
         "./images/IMG_20221225_172946-01.jpeg.jpg",
         "./images/IMG_20221225_172947.jpg",
         "./images/IMG_20221227_161949-01.jpeg.jpg",
@@ -57,7 +51,6 @@ document.addEventListener("DOMContentLoaded", function () {
         "./images/IMG_20230112_143335.jpg",
         "./images/IMG_20230112_143349.jpg",
         "./images/IMG_20230117_222915.jpg",
-        "./images/IMG_20230121_185339-01.jpeg.jpg",
         "./images/IMG_20230121_185339.jpg",
         "./images/IMG_20230121_185408-01.jpeg.jpg",
         "./images/IMG_20230128_175207-01-01.jpeg.jpg",
@@ -112,6 +105,10 @@ document.addEventListener("DOMContentLoaded", function () {
         "./images/IMG_20230806_222041.jpg",
         "./images/IMG_20230810_235335.jpg",
         "./images/IMG_20231020_210701.jpg",
+        "./images/IMG_20221130_194825.jpg",
+        "./images/IMG_20221225_172908.jpg",
+        "./images/IMG_20221007_182651.jpg",
+        "./images/IMG_20221202_000045.jpg",
         
     ];
 
