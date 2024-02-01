@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 *{
     padding: 0;
     margin: 0;
 }
 body{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #060606;
 
 }
@@ -12,18 +13,20 @@ body{
     height: 100vh;
 }
 
-.content img{
-    width: 100%;
-    height: 250px;
+.profile-content{
+    padding: 100px;
 }
-.portfolio-images img{
+
+/* .portfolio-images img{
     width: 300px;
     height: auto;
 }
 .portfolio-images .col-lg-4{
     height: 150px;
+} */
+.profile-img{
+    width: 250px;
 }
-
 
 .modal-message{
     background-color: rgb(26, 26, 26);
@@ -31,7 +34,7 @@ body{
 
 
 
-.menu-line{
+/* .menu-line{
     width: 0;
     height: 2px;
     transition: 0.3s;
@@ -42,7 +45,7 @@ body{
     height: 2px;
     background-color: rgb(0, 139, 30);
 
-}
+} */
 
 
  /* Style for the next and previous buttons */
@@ -86,6 +89,15 @@ body{
     .gallery-item {
         flex: 0 0 95%; /* Display each item in a single column */
     }
+    .profile-img{
+        width: 200px;
+    }
+    .profile-para{
+        font-size: 15px;
+    }
+    .profile-content{
+        padding: 45px;
+    }
 }
 
  
@@ -114,9 +126,3 @@ body{
     
     }
 
-@media only screen and (min-width: 768px) {
-    .portfolio-images img{
-        width: 220px;
-        height: auto;
-    }
-}

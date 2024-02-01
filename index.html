@@ -25,12 +25,8 @@
         z-index: 9999;
         display: none;
     }
-    .dyn-border{
-      border: 2px solid white;
-    }
-    .dyn-border:hover{
-      border: 2px solid rgb(0, 139, 30);
-    }
+    
+   
     
 </style>
 </head>
@@ -42,92 +38,68 @@
     <span class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
     </span>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link d-block d-lg-none text-white" href="#portfolio" onclick="showNormalPage()">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link d-block d-lg-none text-white " href="#about" onclick="aboutBtn()">About</a>
-        </li>
-      </ul>
-    </div>
+    
   </div>
 </nav>
 
 
 
+<div class="container profile-content">
+  <div class="row   ">
+    <div class="col-lg-4 col-md-4 d-flex justify-content-center my-4 align-items-center">
+      <img src="./asset/profile-image.jpg" alt="" class="img-fluid profile-img" />
 
-
-
-
-
-
-    <div class="container-fluid text-white mt-5">
-        <div class="row ">
-            <div class="col-lg-3  d-flex justify-content-center  pt-5 ">
-                <div class="content text-center">
-                    <img src="./asset/profile-image.jpg" alt="" class="img-fluid">
-                    <h3 class="m-4">Melvin</h3>
-                    <p>Berlin , Germany</p>
-                    <div class="icons d-flex gap-4 justify-content-center fs-5">
+    </div>
+    <div class="col-lg-8 col-md-8 d-flex flex-column justify-content-center my-4 text-white">
+      <h2>About</h2>
+      <p class="profile-para">Self taught Indian artist based in Berlin with 4 years of experience in tattooing and fine arts field. In my paintings I try to capture the beauty of faces and their stories with medium of oil paint. With designing tattoos I believe in self expression and representing their desires.</p>
+<div>
+  <p>Berlin , Germany</p>
+                    <div class="icons d-flex align-items-center  gap-4  fs-4">
                         <a href="https://www.instagram.com/____.melani.___/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram" style="color: #f2f2f2;"></i></a>
                         <a href="https://wa.me/+49 176 30498225"><i class="fa-brands fa-whatsapp" style="color: #f2f2f2"></i></a>
-                    </div>
-                      <button class="btn text-white my-3 dyn-border" data-bs-toggle="modal" data-bs-target="#exampleModal" >Message</button>
-  
-                    
-
-                    <div class="modal fade mt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
-                      <div class="modal-dialog ">
-                        <div class="modal-content modal-message">
-                          <div class="text-end ">
-                              
-                              <button type="button" class="btn " data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></button>
-                              <h4 class="text-center text-light  ">Message Me</h4>
-                          </div>
-                          <div class="modal-body ">
-                              <div class="col bg-secondary-subtle rounded-3 shadow modal-message">
-                                <form id="submit-form" action="" class="bg-dark">
-                                  <input type="text" id="fname" name="name" placeholder="Your name" class="form-control my-2">
-                                  <input type="text" id="lname" name="email" placeholder="Your email" class="form-control my-2">
-                                 
-                                  <textarea id="subject" name="message" placeholder="Write here.." style="height:150px" class="form-control my-2 "></textarea>
-                                  <button type="submit"  class="btn text-white w-100" onclick="sendmsg()" style="background-color: rgb(0, 139, 30);">Send</button>
-                                </form>
-
-                                   
-                              </div>
-                          </div>
-
-                        </div>
-                      </div>
+                        <button class="btn text-white   fs-4" data-bs-toggle="modal" data-bs-target="#exampleModal" ><i class="fa-regular fa-envelope"></i></button>
                     </div>
 
+</div>
+    </div>
+    <div class="modal fade mt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+      <div class="modal-dialog ">
+        <div class="modal-content modal-message">
+          <div class="text-end ">
+              
+              <button type="button" class="btn " data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></button>
+              <h4 class="text-center text-light  ">Message Me</h4>
+          </div>
+          <div class="modal-body ">
+              <div class="col bg-secondary-subtle rounded-3 shadow modal-message">
+                <form id="submit-form" action="" class="bg-dark">
+                  <input type="text" id="fname" name="name" placeholder="Your name" class="form-control my-2">
+                  <input type="text" id="lname" name="email" placeholder="Your email" class="form-control my-2">
+                 
+                  <textarea id="subject" name="message" placeholder="Write here.." style="height:150px" class="form-control my-2 "></textarea>
+                  <button type="submit"  class="btn text-white w-100" onclick="sendmsg()" style="background-color: rgb(0, 139, 30);">Send</button>
+                </form>
 
-
-                    <div class="pages d-none d-sm-block ">
-                      <div class="page" onclick="showNormalPage()">
-                        <p class="mt-1" >Portfolio</p>
-                        <div class="menu-line"></div>
-                      </div>
-                      <div class="page" onclick="aboutBtn()">
-                        <p class="mt-2" >About</p>
-                        <div class="menu-line"></div>
-                      </div>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-9  pt-4 " id="about">
-
-
-
-              <div class="row "  id="image-gallery" ></div>
+                   
               </div>
-             
-            </section>
+          </div>
 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+
+  <div class="row "  id="image-gallery" ></div>
+</div>
+
+
+
+
+
+   
 
         
      
